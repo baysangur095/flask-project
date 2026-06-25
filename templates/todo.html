@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/todo" method = 'POST'>
+    <label>Добавьте задачу:</label>
+    <input type="text" name="task" placeholder="Опишите задачу" required>
+    <button type="submit">Отправить</button>
+</form>
+
+<h1>Список дел</h1>
+<ul>
+    {% for t in tasks %}
+        <li>{{t}}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

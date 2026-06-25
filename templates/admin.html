@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Вход в админку {% endblock %}
+
+{% block content %}
+
+    {% if error %}
+        <p style="color: red;">{{error}}</p>
+    {% endif %}
+
+    {% if correct %}
+        <p style="color: green;">{{correct}}</p>
+    {% endif %}
+
+    <form action="/admin" method="POST">
+        <label>Введите пароль:</label>
+        <input type="password" name="pass_admin" placeholder="Введите пароль" required>
+        <button type="submit">Войти</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/register_acc" method="POST">
+    <label>Введите ваше имя:</label>
+    <input type="text" name="name_acc" placeholder="Введите имя" required>
+
+    <label>Введите пароль:</label>
+    <input type="password" name="password" placeholder="Введите пароль" required>
+
+    <input type="password" name="password_confirm" placeholder="Подтвердите ваш пароль" required>
+
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+{% endblock %}

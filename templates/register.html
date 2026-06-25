@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+
+<form action="/register" method="POST">
+  <label >Введите ваше имя:</label>
+  <input type="text" name="username" placeholder="Your name" required>
+
+  <label >Введите ваш возраст:</label>
+  <input type="number" name="user_age" placeholder="Your age" required>
+
+  <label>Выберите направление:</label>
+  <input type="radio" name="choice" value="Python" required>Python <br>
+  <input type="radio" name="choice" value="Data Science" required >Data Science <br>
+  <input type="radio" name="choice" value="Frontend" required> Frontend<br>
+
+  <button type="submit">Записаться</button>
+</form>
+
+{% endblock %}

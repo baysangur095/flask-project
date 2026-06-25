@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/IMT" method="POST">
+    <label>Введите ваш рост:</label>
+    <input type="number" name="height" step="0.1" placeholder="Введите рост в метрах" required>
+
+    <label>Введите ваш вес:</label>
+    <input type="number" name="weight" step="0.1" placeholder="Введите ваш вес в кг" required>
+
+    <button type="submit" >Рассчитать</button>
+</form>
+
+<p>Ваш ИМТ состовляет:{{IMT_user}}</p>
+
+{% endblock %}

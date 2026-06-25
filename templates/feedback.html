@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>write messege</h1>
+
+<form action="/feedback" method="POST">
+  <label>what is your name</label>
+
+  <input type="text" name="username" placeholder="your name" required>
+
+  <label>your messege</label>
+  <textarea name="messege" rows="4" placeholder="your messege" required ></textarea>
+  <button type="submit">send</button>
+</form>
+{% endblock %}

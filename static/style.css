@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+    background-color: gray;
+    padding: 20px;
+
+}
+nav {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
